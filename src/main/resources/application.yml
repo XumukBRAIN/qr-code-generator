@@ -1,0 +1,20 @@
+properties:
+  pdf-parameter:
+    absolute-path-to-file: "Text.pdf"
+  qr-parameter:
+    height: 200
+    width: 200
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      enabled: true
+
+server:
+  port: 8081
+
+s3:
+  accessKey: LQLWCEOzA8OCzcWErJjX
+  secretKey: Ff4vNv0XxD7tmi9tfk4B9k2XhWyg1cVHoJLh7u3f
+  bucketName: "qr-code-generator"
